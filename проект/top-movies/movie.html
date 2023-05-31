@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anton&family=Bangers&family=Lobster&family=Merriweather&family=Open+Sans&family=Pacifico&family=Rubik+Spray+Paint&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="movies.css">
+    <title>Movie</title>
+</head>
+<body class="dark-theme">
+    <header class="container">
+        <div class="header__content">
+            <a href="index.html" class="header__logo">Movies</a>
+            <form>
+                <input type="text" id="header__search" placeholder="Search..." disabled oninput="searchItems()">
+            </form>
+          </div>  
+          </div>  
+        <div class="sort">
+            <div class="sort-by">
+            </div>
+            <div class="page-display">   
+                <button class="btn-toggle">
+                    <i class="dark-icon">🌙</i>
+                    <i class="light-icon">🔆</i>
+                </button>
+            </div>
+        </div>
+    </header>
+    <div class="modal"></div>
+
+
+
+    <script src="movie-script.js"></script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anton&family=Bangers&family=Lobster&family=Merriweather&family=Open+Sans&family=Pacifico&family=Rubik+Spray+Paint&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="movies.css">
+    <title>Movies</title>
+</head>
+
+<body>
+    <header class="container">
+        <div class="header__content">
+            <a href="index.html" class="header__logo">Movies</a>
+            <form>
+                <input type="text" id="header__search" placeholder="Search..." oninput="searchItems()">
+            </form>
+          </div>  
+        <div class="sort">
+            <div class="sort-by">
+                <p>Sort by</p>
+            </div>
+            <div class="page-display">   
+                <button class="btn-toggle">
+                    <i class="dark-icon">🌙</i>
+                    <i class="light-icon">🔆</i>
+                </button>       
+                <button class="btn__tile-view" onclick="onChangeView()"></button>
+                <button class="btn__table-view" onclick="onChangeView()"></button>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <div class="movies"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
